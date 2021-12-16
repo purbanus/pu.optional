@@ -15,7 +15,8 @@ import java.util.stream.Stream;
 import org.junit.Test;
 
 /**
- * This code is taken from the Baeldung course: https://www.baeldung.com/java-optional
+ * This code is taken from the Baeldung course: https://www.baeldung.com/java-optional.
+ * Created 2021-12-16
  */
 public class TestOptional
 {
