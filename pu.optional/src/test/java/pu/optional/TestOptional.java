@@ -226,7 +226,8 @@ public void whenOrElseGetAndOrElseDiffer_thenCorrect() {
 @Test(expected = IllegalArgumentException.class)
 public void whenOrElseThrowWorks_thenCorrect() {
     String nullName = null;
-    String name = Optional.ofNullable(nullName).orElseThrow(
+    @SuppressWarnings( "unused" )
+	String name = Optional.ofNullable(nullName).orElseThrow(
       IllegalArgumentException::new);
 }
 
@@ -237,7 +238,8 @@ public void whenOrElseThrowWorks_thenCorrect() {
 @Test(expected = NoSuchElementException.class)
 public void whenNoArgOrElseThrowWorks_thenCorrect() {
     String nullName = null;
-    String name = Optional.ofNullable(nullName).orElseThrow();
+    @SuppressWarnings( "unused" )
+	String name = Optional.ofNullable(nullName).orElseThrow();
 }
 
 /*
@@ -258,7 +260,8 @@ public void givenOptional_whenGetsValue_thenCorrect() {
 @Test(expected = NoSuchElementException.class)
 public void givenOptionalWithNull_whenGetThrowsException_thenCorrect() {
     Optional<String> opt = Optional.ofNullable(null);
-    String name = opt.get();
+    @SuppressWarnings( "unused" )
+	String name = opt.get();
 }
 
 /**
@@ -293,8 +296,8 @@ public void whenOptionalFilterWorks_thenCorrect() {
 public class Modem {
     private Double price;
 
-    public Modem(Double price) {
-        this.price = price;
+    public Modem(Double aPrice) {
+        this.price = aPrice;
     }
  	public Double getPrice()
 	{
