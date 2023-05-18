@@ -13,11 +13,18 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 /**
  * This code is taken from the Baeldung course: https://www.baeldung.com/java-optional.
  * Created 2021-12-16
  */
+/**
+ * LET OP ! LET OP ! LET OP ! LET OP ! LET OP ! LET OP ! LET OP ! LET OP ! LET OP ! 
+ * Je krijgt deze alleen runnend als je de PACKAGE runt. Geen idee waarom!
+ */
+@RunWith(JUnit4.class)
 public class TestOptional
 {
 
@@ -191,6 +198,7 @@ public void whenOrElseGetAndOrElseOverlap_thenCorrect() {
 /**
  * Now let's run another test where the value is present, and ideally, the default value should not even be created:
  */
+
 @Test
 public void whenOrElseGetAndOrElseDiffer_thenCorrect() {
     String text = "Text present";
