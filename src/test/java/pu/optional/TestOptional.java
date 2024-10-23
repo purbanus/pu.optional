@@ -78,7 +78,7 @@ public void givenNonNull_whenCreatesNullable_thenCorrect()
 	assertTrue( opt.isPresent() );
 }
 /**
-By doing this,if we pass in a null reference,it doesn'tthrow an exception but rather returns an empty Optional object:
+By doing this,if we pass in a null reference,it doesn't throw an exception but rather returns an empty Optional object:
 */
 @Test
 public void givenNull_whenCreatesNullable_thenCorrect()
@@ -135,7 +135,8 @@ public void givenOptional_whenIfPresentWorks_thenCorrect() {
     opt.ifPresent(name -> System.out.println(name.length()));
 }
 /**
- * In the above example, we use only two lines of code to replace the five that worked in the first example: one line to wrap the object into an Optional object and the next to perform implicit validation as well as execute the code.
+ * In the above example, we use only two lines of code to replace the five that worked in the first example: one line to wrap the object 
+ * into an Optional object and the next to perform implicit validation as well as execute the code.
 */
 /**
  * 5. Default Value With orElse() 
